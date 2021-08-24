@@ -1,0 +1,62 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 500px;
+    text-align: center;
+}
+
+body {
+    background-color: beige;
+}
+
+h1 {
+    text-align: center;
+    color: blueviolet;
+}
+
+label {
+    font-size: larger;
+    color: black;
+    font-weight: 800;
+    padding: 10px;
+}
+
+input {
+    border-radius: 25px;
+    outline: none;
+    font-size: larger;
+    padding: 10px;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    border-color: blueviolet;
+}
+
+button {
+    border-radius: 10px;
+    font-size: larger;
+    padding: 5px;
+    width: auto;
+    margin: auto;
+    margin-top: 10px;
+    text-align: center;
+    border-color: blueviolet;
+    background-color: blueviolet;
+    color: white;
+}
+
+.message-output {
+    font-size: large;
+    font-weight: 800;
+    color: black;
+}
+
+#img-out {
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 50%;
+}
