@@ -4,24 +4,24 @@ const check = document.querySelector("#check-number")
 const output = document.querySelector(".message-output")
 
 
-function checkLucky() {
+const checkLucky=()=> {
     const sum = calSum(dateofBirth.value)
     if (sum > 0 && dateofBirth != null) {
         if (sum % luckynumber.value == 0) {
-            output.innerText = "Hurray!! You are Lucky!! 🥳 🥳 🥳"
+            output.innerText = `Hurray!! You are Lucky!! 🥳 🥳 🥳`
             document.getElementById("img-out").src = "party.gif"
 
         } else {
-            output.innerText = "Sorry , You make your own Luck!!😕"
+            output.innerText = `Sorry , You make your own Luck!!😕`
             document.getElementById("img-out").src = "sad.gif"
         }
     } else {
-        output.innerText = "Enter Valid Inputs"
+        output.innerText = `Enter Valid Inputs`
     }
 
 }
 
-function calSum(datenum) {
+let calSum=(datenum) =>{
     datenum = datenum.replaceAll("-", "")
     let sum = 0
     for (let i = 0; i < datenum.length; i++) {
